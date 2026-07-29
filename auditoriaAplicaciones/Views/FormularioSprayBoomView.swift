@@ -47,7 +47,7 @@ struct FormularioSprayBoomView: View {
                             .foregroundColor(.black)
                         Text("Lote: \(info.lote)\(info.bloque.isEmpty ? "" : " - Bloque: \(info.bloque)")")
                             .font(.subheadline)
-                            .foregroundColor(.darkGray)
+                            .foregroundColor(Color(white: 0.3))
                     }
                     .padding(12)
                 }

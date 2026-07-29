@@ -170,7 +170,7 @@ struct AuditHistoryRow: View {
                 let dateStr = dateFormatter.string(from: Date(timeIntervalSince1970: audit.fecha / 1000.0))
                 Text("Fecha: \(dateStr) - Lote: \(audit.lote)\(audit.bloque.isEmpty ? "" : " - Bloque: \(audit.bloque)")")
                     .font(.caption)
-                    .foregroundColor(.darkGray)
+                    .foregroundColor(Color(white: 0.3))
                 Text("Evaluador: \(audit.evaluador)")
                     .font(.caption)
                     .foregroundColor(.gray)

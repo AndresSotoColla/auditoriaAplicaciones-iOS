@@ -28,7 +28,7 @@ struct FormularioCalibracionView: View {
                             .foregroundColor(.black)
                         Text("Finca: \(info.finca) - Lote: \(info.lote)\(info.bloque.isEmpty ? "" : " - Bloque: \(info.bloque)")")
                             .font(.subheadline)
-                            .foregroundColor(.darkGray)
+                            .foregroundColor(Color(white: 0.3))
                     }
                     .padding(12)
                 }
