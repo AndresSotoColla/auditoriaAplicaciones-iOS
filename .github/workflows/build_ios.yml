@@ -1,0 +1,53 @@
+name: Compilar iOS App (GitHub Actions)
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    name: Compilar Proyecto Xcode y Generar IPA
+    runs-on: macos-14
+
+    steps:
+      - name: Descargar Código Fuente
+        uses: actions/checkout@v4
+
+      - name: Mostrar Versión de Xcode
+        run: xcodebuild -version
+
+      - name: Compilar Proyecto iOS con xcodebuild
+        run: |
+          xcodebuild build \
+            -project auditoriaAplicaciones.xcodeproj \
+            -scheme auditoriaAplicaciones \
+            -sdk iphoneos \
+            -configuration Release \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            DerivedDataPath=build
+
+      - name: Empaquetar Archivo .IPA (Release)
+        run: |
+          mkdir -p Payload
+          cp -r build/Build/Products/Release-iphoneos/auditoriaAplicaciones.app Payload/
+          zip -r auditoriaAplicaciones.ipa Payload
+          echo "Archivo IPA empaquetado exitosamente."
+
+      - name: Subir Archivo IPA listo para Descargar
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoriaAplicaciones-iOS-IPA
+          path: auditoriaAplicaciones.ipa
+          retention-days: 30
+
+      - name: Subir Bundle .APP de la Aplicación
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoriaAplicaciones-iOS-APP-Bundle
+          path: build/Build/Products/Release-iphoneos/auditoriaAplicaciones.app
+          retention-days: 30

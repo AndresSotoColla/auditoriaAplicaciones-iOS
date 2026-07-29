@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000012B00000000000001 /* auditoriaAplicacionesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000012B00000000000001 /* auditoriaAplicacionesApp.swift */; };
+		A10000022B00000000000002 /* NozzleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000022B00000000000002 /* NozzleData.swift */; };
+		A10000032B00000000000003 /* ProductoEvaluado.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000032B00000000000003 /* ProductoEvaluado.swift */; };
+		A10000042B00000000000004 /* CalculoRecorrido.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000042B00000000000004 /* CalculoRecorrido.swift */; };
+		A10000052B00000000000005 /* InsumoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000052B00000000000005 /* InsumoData.swift */; };
+		A10000062B00000000000006 /* AuditoriaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000062B00000000000006 /* AuditoriaInfo.swift */; };
+		A10000072B00000000000007 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000072B00000000000007 /* SyncManager.swift */; };
+		A10000082B00000000000008 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000082B00000000000008 /* StorageManager.swift */; };
+		A10000092B00000000000009 /* CsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000092B00000000000009 /* CsvParser.swift */; };
+		A100000A2B0000000000000A /* ExportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000A2B0000000000000A /* ExportManager.swift */; };
+		A100000B2B0000000000000B /* PdfExportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000B2B0000000000000B /* PdfExportManager.swift */; };
+		A100000C2B0000000000000C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000C2B0000000000000C /* LocationManager.swift */; };
+		A100000D2B0000000000000D /* VideoBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000D2B0000000000000D /* VideoBackgroundView.swift */; };
+		A100000E2B0000000000000E /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000E2B0000000000000E /* CustomTextFieldStyle.swift */; };
+		A100000F2B0000000000000F /* OrdenSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000F2B0000000000000F /* OrdenSelectorView.swift */; };
+		A10000102B00000000000010 /* BoquillaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000102B00000000000010 /* BoquillaItemView.swift */; };
+		A10000112B00000000000011 /* CalculoRecorridoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000112B00000000000011 /* CalculoRecorridoCardView.swift */; };
+		A10000122B00000000000012 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000122B00000000000012 /* MainMenuView.swift */; };
+		A10000132B00000000000013 /* SelectionDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000132B00000000000013 /* SelectionDialogView.swift */; };
+		A10000142B00000000000014 /* DatosGeneralesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000142B00000000000014 /* DatosGeneralesView.swift */; };
+		A10000152B00000000000015 /* FormularioSprayBoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000152B00000000000015 /* FormularioSprayBoomView.swift */; };
+		A10000162B00000000000016 /* FormularioMezclasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000162B00000000000016 /* FormularioMezclasView.swift */; };
+		A10000172B00000000000017 /* FormularioCalibracionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000172B00000000000017 /* FormularioCalibracionView.swift */; };
+		A10000182B00000000000018 /* HistorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000182B00000000000018 /* HistorialView.swift */; };
+
+		R10000012B00000000000001 /* datos.csv in Resources */ = {isa = PBXBuildFile; fileRef = F20000012B00000000000001 /* datos.csv */; };
+		R10000022B00000000000002 /* bg_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F20000022B00000000000002 /* bg_video.mp4 */; };
+		R10000032B00000000000003 /* demo_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F20000032B00000000000003 /* demo_video.mp4 */; };
+		R10000042B00000000000004 /* referencia_boquillas.png in Resources */ = {isa = PBXBuildFile; fileRef = F20000042B00000000000004 /* referencia_boquillas.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E10000012B00000000000001 /* auditoriaAplicaciones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = auditoriaAplicaciones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10000012B00000000000001 /* auditoriaAplicacionesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auditoriaAplicacionesApp.swift; sourceTree = "<group>"; };
+		F10000022B00000000000002 /* NozzleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NozzleData.swift; sourceTree = "<group>"; };
+		F10000032B00000000000003 /* ProductoEvaluado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoEvaluado.swift; sourceTree = "<group>"; };
+		F10000042B00000000000004 /* CalculoRecorrido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoRecorrido.swift; sourceTree = "<group>"; };
+		F10000052B00000000000005 /* InsumoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsumoData.swift; sourceTree = "<group>"; };
+		F10000062B00000000000006 /* AuditoriaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditoriaInfo.swift; sourceTree = "<group>"; };
+		F10000072B00000000000007 /* SyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
+		F10000082B00000000000008 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		F10000092B00000000000009 /* CsvParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvParser.swift; sourceTree = "<group>"; };
+		F100000A2B0000000000000A /* ExportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportManager.swift; sourceTree = "<group>"; };
+		F100000B2B0000000000000B /* PdfExportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfExportManager.swift; sourceTree = "<group>"; };
+		F100000C2B0000000000000C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F100000D2B0000000000000D /* VideoBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBackgroundView.swift; sourceTree = "<group>"; };
+		F100000E2B0000000000000E /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		F100000F2B0000000000000F /* OrdenSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdenSelectorView.swift; sourceTree = "<group>"; };
+		F10000102B00000000000010 /* BoquillaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoquillaItemView.swift; sourceTree = "<group>"; };
+		F10000112B00000000000011 /* CalculoRecorridoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoRecorridoCardView.swift; sourceTree = "<group>"; };
+		F10000122B00000000000012 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		F10000132B00000000000013 /* SelectionDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionDialogView.swift; sourceTree = "<group>"; };
+		F10000142B00000000000014 /* DatosGeneralesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosGeneralesView.swift; sourceTree = "<group>"; };
+		F10000152B00000000000015 /* FormularioSprayBoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioSprayBoomView.swift; sourceTree = "<group>"; };
+		F10000162B00000000000016 /* FormularioMezclasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioMezclasView.swift; sourceTree = "<group>"; };
+		F10000172B00000000000017 /* FormularioCalibracionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioCalibracionView.swift; sourceTree = "<group>"; };
+		F10000182B00000000000018 /* HistorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialView.swift; sourceTree = "<group>"; };
+
+		F20000012B00000000000001 /* datos.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = datos.csv; sourceTree = "<group>"; };
+		F20000022B00000000000002 /* bg_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = video.mp4; path = bg_video.mp4; sourceTree = "<group>"; };
+		F20000032B00000000000003 /* demo_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = video.mp4; path = demo_video.mp4; sourceTree = "<group>"; };
+		F20000042B00000000000004 /* referencia_boquillas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = referencia_boquillas.png; sourceTree = "<group>"; };
+		F30000012B00000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10000012B00000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G00000012B00000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G00000022B00000000000002 /* auditoriaAplicaciones */,
+				E10000012B00000000000001 /* auditoriaAplicaciones.app */,
+			);
+			sourceTree = "<group>";
+		};
+		G00000022B00000000000002 /* auditoriaAplicaciones */ = {
+			isa = PBXGroup;
+			children = (
+				G00000032B00000000000003 /* App */,
+				G00000042B00000000000004 /* Models */,
+				G00000052B00000000000005 /* Network */,
+				G00000062B00000000000006 /* Storage */,
+				G00000072B00000000000007 /* Utilities */,
+				G00000082B00000000000008 /* Helpers */,
+				G00000092B00000000000009 /* Views */,
+				G000000A2B0000000000000A /* Resources */,
+			);
+			path = auditoriaAplicaciones;
+			sourceTree = "<group>";
+		};
+		G00000032B00000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F10000012B00000000000001 /* auditoriaAplicacionesApp.swift */,
+				F30000012B00000000000001 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G00000042B00000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F10000022B00000000000002 /* NozzleData.swift */,
+				F10000032B00000000000003 /* ProductoEvaluado.swift */,
+				F10000042B00000000000004 /* CalculoRecorrido.swift */,
+				F10000052B00000000000005 /* InsumoData.swift */,
+				F10000062B00000000000006 /* AuditoriaInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G00000052B00000000000005 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F10000072B00000000000007 /* SyncManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		G00000062B00000000000006 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				F10000082B00000000000008 /* StorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		G00000072B00000000000007 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F10000092B00000000000009 /* CsvParser.swift */,
+				F100000A2B0000000000000A /* ExportManager.swift */,
+				F100000B2B0000000000000B /* PdfExportManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		G00000082B00000000000008 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F100000C2B0000000000000C /* LocationManager.swift */,
+				F100000D2B0000000000000D /* VideoBackgroundView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		G00000092B00000000000009 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F100000E2B0000000000000E /* CustomTextFieldStyle.swift */,
+				F100000F2B0000000000000F /* OrdenSelectorView.swift */,
+				F10000102B00000000000010 /* BoquillaItemView.swift */,
+				F10000112B00000000000011 /* CalculoRecorridoCardView.swift */,
+				F10000122B00000000000012 /* MainMenuView.swift */,
+				F10000132B00000000000013 /* SelectionDialogView.swift */,
+				F10000142B00000000000014 /* DatosGeneralesView.swift */,
+				F10000152B00000000000015 /* FormularioSprayBoomView.swift */,
+				F10000162B00000000000016 /* FormularioMezclasView.swift */,
+				F10000172B00000000000017 /* FormularioCalibracionView.swift */,
+				F10000182B00000000000018 /* HistorialView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G000000A2B0000000000000A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F20000012B00000000000001 /* datos.csv */,
+				F20000022B00000000000002 /* bg_video.mp4 */,
+				F20000032B00000000000003 /* demo_video.mp4 */,
+				F20000042B00000000000004 /* referencia_boquillas.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T10000012B00000000000001 /* auditoriaAplicaciones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10000012B00000000000001 /* Build configuration list for PBXNativeTarget "auditoriaAplicaciones" */;
+			buildPhases = (
+				S10000012B00000000000001 /* Sources */,
+				C10000012B00000000000001 /* Frameworks */,
+				R00000012B00000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = auditoriaAplicaciones;
+			productName = auditoriaAplicaciones;
+			productReference = E10000012B00000000000001 /* auditoriaAplicaciones.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P10000012B00000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					T10000012B00000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B10000022B00000000000002 /* Build configuration list for PBXProject "auditoriaAplicaciones" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = es;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				es,
+				Base,
+			);
+			mainGroup = G00000012B00000000000001;
+			productRefGroup = G00000012B00000000000001;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T10000012B00000000000001 /* auditoriaAplicaciones */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R00000012B00000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				R10000012B00000000000001 /* datos.csv in Resources */,
+				R10000022B00000000000002 /* bg_video.mp4 in Resources */,
+				R10000032B00000000000003 /* demo_video.mp4 in Resources */,
+				R10000042B00000000000004 /* referencia_boquillas.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S10000012B00000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000012B00000000000001 /* auditoriaAplicacionesApp.swift in Sources */,
+				A10000022B00000000000002 /* NozzleData.swift in Sources */,
+				A10000032B00000000000003 /* ProductoEvaluado.swift in Sources */,
+				A10000042B00000000000004 /* CalculoRecorrido.swift in Sources */,
+				A10000052B00000000000005 /* InsumoData.swift in Sources */,
+				A10000062B00000000000006 /* AuditoriaInfo.swift in Sources */,
+				A10000072B00000000000007 /* SyncManager.swift in Sources */,
+				A10000082B00000000000008 /* StorageManager.swift in Sources */,
+				A10000092B00000000000009 /* CsvParser.swift in Sources */,
+				A100000A2B0000000000000A /* ExportManager.swift in Sources */,
+				A100000B2B0000000000000B /* PdfExportManager.swift in Sources */,
+				A100000C2B0000000000000C /* LocationManager.swift in Sources */,
+				A100000D2B0000000000000D /* VideoBackgroundView.swift in Sources */,
+				A100000E2B0000000000000E /* CustomTextFieldStyle.swift in Sources */,
+				A100000F2B0000000000000F /* OrdenSelectorView.swift in Sources */,
+				A10000102B00000000000010 /* BoquillaItemView.swift in Sources */,
+				A10000112B00000000000011 /* CalculoRecorridoCardView.swift in Sources */,
+				A10000122B00000000000012 /* MainMenuView.swift in Sources */,
+				A10000132B00000000000013 /* SelectionDialogView.swift in Sources */,
+				A10000142B00000000000014 /* DatosGeneralesView.swift in Sources */,
+				A10000152B00000000000015 /* FormularioSprayBoomView.swift in Sources */,
+				A10000162B00000000000016 /* FormularioMezclasView.swift in Sources */,
+				A10000172B00000000000017 /* FormularioCalibracionView.swift in Sources */,
+				A10000182B00000000000018 /* HistorialView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BC0000012B00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = auditoriaAplicaciones/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.auditoriaaplicaciones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC0000022B00000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = auditoriaAplicaciones/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.auditoriaaplicaciones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC0000032B00000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC0000042B00000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B10000012B00000000000001 /* Build configuration list for PBXNativeTarget "auditoriaAplicaciones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000012B00000000000001 /* Debug */,
+				BC0000022B00000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10000022B00000000000002 /* Build configuration list for PBXProject "auditoriaAplicaciones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000032B00000000000003 /* Debug */,
+				BC0000042B00000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = P10000012B00000000000001 /* Project object */;
+}
