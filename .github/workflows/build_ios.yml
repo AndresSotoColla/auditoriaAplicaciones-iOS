@@ -19,21 +19,13 @@ jobs:
       - name: Mostrar Versión de Xcode
         run: xcodebuild -version
 
-      - name: Compilar Proyecto iOS (Dispositivo Físico con Firma Ad-Hoc)
+      - name: Compilar Proyecto iOS
         run: |
           xcodebuild build \
             -project auditoriaAplicaciones.xcodeproj \
             -scheme auditoriaAplicaciones \
-            -sdk iphoneos \
-            -configuration Release \
-            CODE_SIGN_IDENTITY="-" \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGNING_ALLOWED=YES \
-            DerivedDataPath=build || \
-          xcodebuild build \
-            -project auditoriaAplicaciones.xcodeproj \
-            -scheme auditoriaAplicaciones \
             -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
             -configuration Release \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO \
