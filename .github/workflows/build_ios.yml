@@ -19,16 +19,16 @@ jobs:
       - name: Mostrar Versión de Xcode
         run: xcodebuild -version
 
-      - name: Compilar Proyecto iOS con xcodebuild
+      - name: Compilar Proyecto iOS (Dispositivo Físico con Firma Ad-Hoc)
         run: |
           xcodebuild build \
             -project auditoriaAplicaciones.xcodeproj \
             -scheme auditoriaAplicaciones \
-            -destination 'generic/platform=iOS' \
+            -sdk iphoneos \
             -configuration Release \
-            CODE_SIGN_IDENTITY="" \
+            CODE_SIGN_IDENTITY="-" \
             CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_ALLOWED=YES \
             DerivedDataPath=build || \
           xcodebuild build \
             -project auditoriaAplicaciones.xcodeproj \
@@ -62,11 +62,9 @@ jobs:
         with:
           name: auditoriaAplicaciones-iOS-IPA
           path: auditoriaAplicaciones.ipa
-          if-no-files-found: warn
 
       - name: Subir Bundle .APP de la Aplicación
         uses: actions/upload-artifact@v4
         with:
           name: auditoriaAplicaciones-iOS-APP-Bundle
           path: Payload/auditoriaAplicaciones.app
-          if-no-files-found: warn
